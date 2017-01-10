@@ -21,5 +21,5 @@ for i in range (n):
         table[strings[0]][3] += 1
         table[strings[2]][4] += 3
         table[strings[2]][1] += 1
-for key in table:
-    print (key)
+for key,value in table.items():
+    print (key+":"+str(value[0]), value[1], value[2], value[3], value[4])
