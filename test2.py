@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 s=['8', 'Bishop', '166', '10', 'Waller', '173', '9', 'Andrews', '166']
 for i in range(5):
 	s2=s.pop(i)
@@ -12,4 +13,21 @@ def C(x, y):
         return 0
     return C(x - 1, y) + C(x - 1, y - 1)
 print(C(n, k))
+>>>>>>> master
+=======
+ok_status=True
+vowels=['a', 'u', 'i', 'e', 'o']
+
+def check(word):
+	global ok_status
+	for vowel in vowels:
+		if vowel in word:
+			return True
+	ok_status=False
+	return False
+
+print(check('abacba'))
+print(ok_status)
+print(check('wwww'))
+print(ok_status)
 >>>>>>> master
