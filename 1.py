@@ -13,7 +13,11 @@ def get(namespace, variable):
 			namespace=namespace[0]
 			#print(type(namespace))
 			get(namespace, variable)
-	
+	else:
+		namespace=name[namespace]
+		namespace=namespace[0]
+		#print(type(namespace))
+		get(namespace, variable)
 	#else:
 		#print(None)
 name={}
@@ -31,10 +35,11 @@ print('name:', name)
 print('v:', v)
 #name={'bar': ['foo'], 'foo': ['global']}
 #v={'global': ['a'], 'bar': ['a'], 'foo': ['b']}
-6
+'''6
 create foo global
 create bar foo
 add bar b
 create zoo bar
 create doo zoo
 get zoo b
+'''
